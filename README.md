@@ -2,7 +2,7 @@
 #### Abdulah Faiz Tedjo Putro (2209116026)
 
 
-# Class Java
+# Penjelasan Class Java
 
 ## Main.java
 
@@ -85,60 +85,89 @@
 
 ## Mobil.java
 
-1. Kelas Abstrak Mobil:
+1. **Kelas Abstrak Mobil:**
    - Ini adalah kelas abstrak yang digunakan sebagai dasar untuk semua jenis mobil dalam program penyewaan mobil.
    - Kelas ini memiliki tiga variabel instance: nama, jenis, dan hargaSewa yang digunakan untuk menyimpan informasi tentang mobil.
 
-3. Konstruktor:
+3. **Konstruktor:**
    - Konstruktor Mobil digunakan untuk inisialisasi objek Mobil saat objek kelas turunan dibuat. Ini menerima tiga parameter: nama mobil, jenis mobil, dan harga sewa per hari.
 
-3. Metode Getter:
+3. **Metode Getter:**
    - Kelas ini memiliki metode getter (getter methods) yang digunakan untuk mengambil nilai dari variabel instance. Metode-metode ini memungkinkan akses ke informasi tentang mobil, seperti nama, jenis, dan harga sewa.
 
-5. Metode Setter:
+5. **Metode Setter:**
    - Kelas ini memiliki metode setter (setter methods) yang digunakan untuk mengubah nilai dari variabel instance. Metode-metode ini memungkinkan pengubahan informasi tentang mobil, seperti mengubah nama, jenis, atau harga sewa.
 
-5. Metode Abstrak hitungBiayaSewa:
+5. **Metode Abstrak hitungBiayaSewa:**
    - Ini adalah metode abstrak yang harus diimplementasikan oleh kelas-kelas turunan dari Mobil. Metode ini menerima parameter lamaSewa (berapa lama mobil disewa) dan digunakan untuk menghitung biaya total sewa mobil selama periode tersebut. Metode ini akan berbeda untuk setiap jenis mobil, jadi kelas turunan harus memberikan implementasi khusus untuk metode ini.
   
 
 ## MobilSUV.java
 
-1. Kelas MobilSUV:
+1. **Kelas MobilSUV:**
    - Ini adalah kelas yang digunakan untuk merepresentasikan jenis mobil SUV dalam program penyewaan mobil.
 
-3. Kata Kunci final:
+3. **Kata Kunci final:**
    - Kelas MobilSUV ditandai dengan kata kunci final, yang berarti kelas ini tidak dapat diwariskan lagi. Ini artinya tidak dapat ada kelas lain yang menjadi turunan dari MobilSUV. Kelas ini merupakan implementasi akhir dari jenis mobil SUV.
 
-3. Konstruktor:
+3. **Konstruktor:**
    - Konstruktor MobilSUV digunakan untuk membuat objek MobilSUV saat objek kelas ini dibuat. Konstruktor ini menerima tiga parameter: nama mobil, jenis mobil, dan harga sewa per hari. Konstruktor ini memanggil konstruktor kelas induk (Mobil) menggunakan super untuk menginisialisasi variabel instance yang diwarisi dari kelas Mobil.
 
-5. Metode hitungBiayaSewa:
+5. **Metode hitungBiayaSewa:**
    - Kelas MobilSUV meng-override (melakukan substitusi) metode abstrak hitungBiayaSewa yang dideklarasikan dalam kelas Mobil. Metode ini menerima parameter lamaSewa yang menunjukkan berapa lama mobil disewa. Implementasi metode ini menghitung biaya sewa total dengan mengalikan harga sewa per hari (getHargaSewa()) dengan lama sewa. Ini adalah implementasi khusus untuk jenis mobil SUV, yang dapat berbeda dari implementasi jenis mobil lainnya (misalnya, mobil sedan).
 
 
 
 ## MobilSedan.java
 
-1. Kelas MobilSedan:
+1. **Kelas MobilSedan:**
    - Ini adalah kelas yang digunakan untuk merepresentasikan jenis mobil sedan dalam program penyewaan mobil.
 
-3. Kata Kunci final:
+3. **Kata Kunci final:**
    - Kelas MobilSedan ditandai dengan kata kunci final, yang berarti kelas ini tidak dapat diwariskan lagi. Ini artinya tidak dapat ada kelas lain yang menjadi turunan dari MobilSedan. Kelas ini merupakan implementasi akhir dari jenis mobil sedan.
 
-3. Konstruktor:
+3. **Konstruktor:**
    - Konstruktor MobilSedan digunakan untuk membuat objek MobilSedan saat objek kelas ini dibuat. Konstruktor ini menerima tiga parameter: nama mobil, jenis mobil, dan harga sewa per hari. Konstruktor ini memanggil konstruktor kelas induk (Mobil) menggunakan super untuk menginisialisasi variabel instance yang diwarisi dari kelas Mobil.
 
-5. Metode hitungBiayaSewa:
+5. **Metode hitungBiayaSewa:**
    - Kelas MobilSedan meng-override (melakukan substitusi) metode abstrak hitungBiayaSewa yang dideklarasikan dalam kelas Mobil. Metode ini menerima parameter lamaSewa yang menunjukkan berapa lama mobil disewa. Implementasi metode ini menghitung biaya sewa total dengan mengalikan harga sewa per hari (getHargaSewa()) dengan lama sewa. Ini adalah implementasi khusus untuk jenis mobil sedan, yang dapat berbeda dari implementasi jenis mobil lainnya (misalnya, mobil SUV).
 
 
 ## PenyewaanMobilException.java
 
-1. Kelas PenyewaMobilException:
+1. **Kelas PenyewaMobilException:**
    - Ini adalah kelas yang digunakan untuk mendefinisikan pengecualian (exception) khusus yang terkait dengan penyewaan mobil dalam program.
    - Kelas ini merupakan turunan dari kelas Exception, yang adalah salah satu kelas dasar dalam hierarki pengecualian Java.
 
-2. Konstruktor:
+2. **Konstruktor:**
    - Kelas ini memiliki satu konstruktor, yaitu PenyewaMobilException(String message). Konstruktor ini menerima pesan (message) yang akan digunakan untuk menjelaskan alasan terjadinya pengecualian.
    - Konstruktor ini memanggil konstruktor kelas induk (Exception) menggunakan super untuk menginisialisasi pesan pengecualian.
+
+
+# Output
+
+## Menu awal
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/1048ab11-0a28-4cdc-9bef-3c254e25d188)
+
+## Tampilkan Mobil
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/ae828179-efbe-4c6d-b9d3-2224320ac612)
+
+## Tambah Mobil
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/271fee07-1bad-48df-a038-f344f296a3b8)
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/eed82bfc-08ab-47d8-a737-a45cec969415)
+
+## Cari Mobil
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/b3c3ad62-e712-4b8e-8633-da977a77dfda)
+
+## Update Mobil
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/86f6b3b0-d245-42b6-95c1-198bb9c33095)
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/c243f76d-6019-4fe5-9a14-e4e4b9251f0a)
+
+## Hapus Mobil
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/9f080187-52b4-4ce7-974f-75941aac8fbb)
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/77ec3f4c-148a-42e9-bcc4-62be59edeb40)
+
+## Keluar
+![image](https://github.com/AbdulahFaiz/pbo-post-test-2/assets/121870536/c45e4cda-9165-4819-aca0-9455e93cd012)
+
+
